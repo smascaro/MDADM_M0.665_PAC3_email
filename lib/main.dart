@@ -19,8 +19,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: _palette,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      routes: {DetailsScreen.routeName: (context) => DetailsScreen()},
-      home: ListScreen(),
+      initialRoute: ListScreen.routeName,
+      routes: {
+        ListScreen.routeName: (context) => ListScreen(),
+        DetailsScreen.routeName: (context) => DetailsScreen()
+      },
     );
   }
 }

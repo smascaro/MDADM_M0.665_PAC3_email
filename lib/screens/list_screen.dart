@@ -5,6 +5,8 @@ import 'package:mymail/model/email.dart';
 import 'package:mymail/widgets/email_widget.dart';
 
 class ListScreen extends StatefulWidget {
+  static const routeName = "/";
+
   @override
   _ListScreenState createState() => _ListScreenState();
 }
